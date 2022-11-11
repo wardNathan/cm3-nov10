@@ -22,7 +22,7 @@ alphabet2 = alphabet.map(toUpper);
 
 var get = document.querySelector("#generate");
 
-get.addEventListener("click", function () {
+get.addEventListener("click", function() {
     ps = generatePassword();
     document.getElementById("password").placeholder = ps;
 });
@@ -34,7 +34,7 @@ function generatePassword() {
     if (!enter) {
         alert("This needs a value");
     } 
-    
+
     else if (enter < 8 || enter > 128) {
 
         enter = parseInt(prompt("You must choose between 8 and 128"));
