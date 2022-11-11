@@ -101,7 +101,7 @@ function generatePassword() {
 
     else if (confirmUppercase) {
         choices = space.concat(alphabet2);
-    };
+    }
 
     var password = [];
 
